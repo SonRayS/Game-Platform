@@ -57,9 +57,11 @@ let user = {
     age: 23,
     isAdmin: true
 }   
-    alert(typeof user.name,typeof user.age,typeof user.isAdmin);
-    alert(typeof user.age);
-    alert(typeof user.isAdmin);
+    alert(typeof user.name,typeof user.age,typeof user.isAdmin); //user name
+    alert(typeof user.age); // age
+    alert(typeof user.isAdmin); // admin 
+
+    //Как вывести текст + указатель (`Тип:,(typeof)${name} !`) ?
 
 // 10 - hw
 let info = prompt("Какую информацию хотите узнать о пользователе / name / age / isAdmin / ?");
