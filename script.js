@@ -43,8 +43,8 @@ let num = 1;
     num -= 3;
     num *= 7;
     num /= 3;
-    num += 1;
-    num -= 1;
+    num++;
+    num--;
         alert(`Result: ${num}`);
 
 // 8 - hw
