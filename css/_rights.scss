@@ -1,0 +1,25 @@
+.rights{
+
+    background-image: url("../img/footerdown.png");
+    background-position: center;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+
+    &__description {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        opacity:0.85;
+        padding-top: $gap;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+
