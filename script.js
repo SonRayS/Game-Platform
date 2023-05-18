@@ -1,4 +1,4 @@
-/*// 1 - hw
+// 1 - hw
 let a = 10;
     alert(`let a = ${a}`);
     alert(`let a = ${a+10}`);
@@ -6,12 +6,12 @@ let a = 10;
 // 2 - hw
 const iphone = 2007;
     alert(`Year of release of the first iPhone: ${iphone}`);
+
 // 3 - hw
-
-let name = "Брендан Эйх";
+const name = "Брендан Эйх";
     alert(`Name of the creator of the JavaScript language: ${name}`);
-// 4 - hw
 
+// 4 - hw
 let i = 10, b = 2, plus, minus, multiplication, division, percent, degree;
 
     plus = i + b;
@@ -50,7 +50,7 @@ let num = 1;
 
 // 8 - hw
 let age = prompt("Сколько вам лет?");
-    alert(`Ваш возраст: ${age}`);*/
+    alert(`Ваш возраст: ${age}`);
 
 // 9 - hw
 let user = {
@@ -62,7 +62,7 @@ let user = {
     alert(typeof user.age); // age
     alert(typeof user.isAdmin); // admin 
 
-    //Как вывести текст + указатель (`Тип:,(typeof)${name} !`) ?
+    //Как вывести текст + указатель (`Тип:,(typeof)${name} !`) a ?
 
 // 9.1 - hw
 user.cityOFresidence = true;
@@ -78,10 +78,10 @@ Object.defineProperty(user, 'age', {
 delete user.cityOFresidence;
     console.log(user);
 
-/*// 10 - hw
+// 10 - hw
 let info = prompt("Какую информацию хотите узнать о пользователе / name / age / isAdmin / ?");
     alert(user[info]);
 
 // 11 - hw
     let get = (prompt("What's your name ?"));
-    alert(`Привет, ${get} !`);*/
+    alert(`Привет, ${get} !`);
