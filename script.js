@@ -1,9 +1,10 @@
-// 1 - hw
+/*// 1 - hw
 let a = 10;
     alert(`let a = ${a}`);
+    alert(`let a = ${a+10}`);
 
 // 2 - hw
-let iphone = 2007;
+const iphone = 2007;
     alert(`Year of release of the first iPhone: ${iphone}`);
 // 3 - hw
 
@@ -49,7 +50,7 @@ let num = 1;
 
 // 8 - hw
 let age = prompt("Сколько вам лет?");
-    alert(`Ваш возраст: ${age}`);
+    alert(`Ваш возраст: ${age}`);*/
 
 // 9 - hw
 let user = {
@@ -63,10 +64,24 @@ let user = {
 
     //Как вывести текст + указатель (`Тип:,(typeof)${name} !`) ?
 
-// 10 - hw
+// 9.1 - hw
+user.cityOFresidence = true;
+    console.log(user);
+
+// 9.2 - hw
+Object.defineProperty(user, 'age', {
+    value: 35,
+  });
+    console.log(user.age);
+
+// 9.3 - hw
+delete user.cityOFresidence;
+    console.log(user);
+
+/*// 10 - hw
 let info = prompt("Какую информацию хотите узнать о пользователе / name / age / isAdmin / ?");
     alert(user[info]);
 
 // 11 - hw
     let get = (prompt("What's your name ?"));
-    alert(`Привет, ${get} !`);
+    alert(`Привет, ${get} !`);*/
