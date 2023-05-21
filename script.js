@@ -89,7 +89,7 @@ let info = prompt("Какую информацию хотите узнать о 
 
 /*
 ---------------------------------------------------------------------------------------------------------------
-*/
+
 
 function AccessDenied() {
     document.body.innerHTML = 'Доступ запрещён!';
@@ -219,8 +219,8 @@ const getMobileOS = () => {
     }
   }
 
-
-   
+   let infoDevise = confirm('Устройство с которого вы зашли это телефон ?'); 
+   if(infoDevise == true){
         let infoM = confirm('Ваш телефон был выпущен в период с 2015 по нынешний год ?');
         if (infoM == true){
 
@@ -234,10 +234,12 @@ const getMobileOS = () => {
                     alert('Установите версию приложения для iOS по ссылке https://iOS.download.file.exe');
                     console.log('iOS'+navigator.userAgent);
                     break;
-                /*case '2':
-                    alert('Установите версию приложения по ссылке https://Other.download.file.exe');
+                case '2':
+                    alert('Ваше устройство не определяется как телефон, рекомендуем установить версию приложения по ссылке https://Other.download.file.exe');
                     console.log('Other'+navigator.userAgent);
-                    break;*/
+                    break;
+                default:
+                    console.log( 'Неизвестное значение(значение устройства вне диапазона' );
             }
 
         } else {
@@ -245,20 +247,65 @@ const getMobileOS = () => {
             const clientOS = getMobileOS();
             switch(clientOS) {
                 case '0':
-                    alert('Установите облегченную версию приложения для Android по ссылке');
+                    alert('Установите облегченную версию приложения для Android по ссылке https://Android.download.lite-file.exe');
                     console.log('Android'+navigator.userAgent);
                     break;
                 case '1':
                     alert('Установите облегченную версию приложения для iOS по ссылке https://iOS.download.lite-file.exe');
                     console.log('iOS'+navigator.userAgent);
                     break;
-                /*case '2':
+                case '2':
+                    alert('Ваше устройство не определяется как телефон, рекомендуем установить версию приложения по ссылке https://Other.download.lite-file.exe');
+                    console.log('Other'+navigator.userAgent);
+                    break;
+                default:
+                    console.log( 'Неизвестное значение(значение устройства вне диапазона' );
+            }
+        }
+
+    } else { 
+
+        let infoM = confirm('У вашего устройства больше 3 ОЗУ ?');
+        if (infoM == true){
+
+            const clientOS = getMobileOS();
+            switch(clientOS) {
+                case '0':
+                    alert('Установите версию приложения для Android по ссылке https://Android.download.file.exe');
+                    console.log('Android'+navigator.userAgent);
+                    break;
+                case '1':
+                    alert('Установите версию приложения для iOS по ссылке https://iOS.download.file.exe');
+                    console.log('iOS'+navigator.userAgent);
+                    break;
+                case '2':
+                    alert('Установите версию приложения по ссылке https://Other.download.file.exe');
+                    console.log('Other'+navigator.userAgent);
+                    break;
+                default:
+                    console.log( 'Неизвестное значение(значение устройства вне диапазона' );
+            }
+
+        } else {
+
+            const clientOS = getMobileOS();
+            switch(clientOS) {
+                case '0':
+                    alert('Установите облегченную версию приложения для Android по ссылке https://Android.download.file.exe');
+                    console.log('Android'+navigator.userAgent);
+                    break;
+                case '1':
+                    alert('Установите облегченную версию приложения для iOS по ссылке https://iOS.download.lite-file.exe');
+                    console.log('iOS'+navigator.userAgent);
+                    break;
+                case '2':
                     alert('Установите версию приложения по ссылке https://Other.download.lite-file.exe');
                     console.log('Other'+navigator.userAgent);
-                    break;*/
+                    break;
+                default:
+                    console.log( 'Неизвестное значение(значение устройства вне диапазона' );
             }
 
         } 
-
-
-       
+    }
+       */

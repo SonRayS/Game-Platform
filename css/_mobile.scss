@@ -1,0 +1,375 @@
+@media(min-width: 343px) and (max-width: 428px){
+
+    .header {
+        height: 735px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 0;
+
+        &__main-description{
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__side-description{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            width: 343px;
+        }
+
+        &__button {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            margin-top: 0;
+        }
+
+        &__side-description{
+            text-align: center;
+        }
+    }
+
+    .menu-img {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px;
+        padding-top: 128px;
+        height: 1221px;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+
+        &__items {
+            width: 343px;
+            height: 300px;
+            grid-column: span 4;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+   
+    .items-box{
+
+        justify-content: center;
+        height: 654px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+
+        .items-box {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-image: url(../img/background-t-img.png);
+            height: 800px;
+            align-content: center;
+        }
+
+        &__main-description {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        &__side-description {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            width: 343px;
+        }
+
+        &__button{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }       
+
+
+        &__img img{
+            width: 344px;
+            height: 231px;
+            padding-top: 64px;
+        }
+    }
+
+    .full-game {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        background-image: url(../img/background-t-img2.png);
+        height: 654px;
+
+        &__img img{
+            width: 344px;
+            height: 231px;
+        }
+
+        &__main-description{
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        &__side-description{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__button{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+    }
+
+    
+    .footer-menu__main-description {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding-top: 52px;
+        
+    }
+
+    .footer-menu__side-description {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 343px;
+    }
+
+    .header__main {
+        display: flex;
+        text-align: center;
+        margin-top: 238px;
+        max-width: 320px;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 342px){
+
+    .header {
+        height: 735px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 0;
+
+        &__main-description{
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__side-description{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            max-width: 300px;
+        }
+
+        &__button {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            margin-top: 0;
+        }
+
+        &__side-description{
+            text-align: center;
+        }
+    }
+
+    .header__main {
+        display: flex;
+        text-align: center;
+        margin-top: 238px;
+    }
+
+    .menu-img {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px;
+        padding-top: 128px;
+        height: 1221px;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+
+        &__items {
+            width: 280px;
+            height: 240px;
+            grid-column: span 4;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+   
+    .items-box{
+
+        justify-content: center;
+        height: 654px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+
+        .items-box {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-image: url(../img/background-t-img.png);
+            height: 800px;
+            align-content: center;
+        }
+
+        &__main-description {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        &__side-description {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            width: 320px;
+        }
+
+        &__button{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }       
+
+
+        &__img img{
+            width: 280px;
+            height: 200px;
+            padding-top: 64px;
+        }
+    }
+
+    .full-game {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        background-image: url(../img/background-t-img2.png);
+        height: 654px;
+
+        &__img img{
+            width: 280px;
+            height: 200px;
+        }
+
+        &__main-description{
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        &__side-description{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            max-width: 300px;
+        }
+
+        &__button{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+    }
+
+    
+    .footer-menu__main-description {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        padding-top: 276px;
+        align-content: center;
+    }
+
+    .footer-menu__side-description {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        max-width: 300px;
+    }
+}
