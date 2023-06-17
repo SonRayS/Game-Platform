@@ -7,7 +7,7 @@ let a = 10;
 const iphone = 2007;
     alert(`Year of release of the first iPhone: ${iphone}`);
 
-// 3 - hw
+// regggggeg - hw
 const name = "Брендан Эйх";
     alert(`Name of the creator of the JavaScript language: ${name}`);
 
@@ -43,7 +43,7 @@ let num = 1;
     num += 5;
     num -= 3;
     num *= 7;
-    num /= 3;
+    num /= ;
     num++;
     num--;
         alert(`Result: ${num}`);
@@ -52,20 +52,22 @@ let num = 1;
 let age = prompt("Сколько вам лет?");
     alert(`Ваш возраст: ${age}`);
 
-// 9 - hw
+// 9 - hw 
+
 let user = {
     name: 'Jess',
     age: 23,
     isAdmin: true
 }   
-    alert(typeof user.name,typeof user.age,typeof user.isAdmin); //user name
+    alert(typeof user.name); //user name
     alert(typeof user.age); // age
     alert(typeof user.isAdmin); // admin 
 
     //Как вывести текст + указатель (`Тип:,(typeof)${name} !`) a ?
 
 // 9.1 - hw
-user.cityOFresidence = true;
+user.cityOfResidence = true;
+user.Jess = 23;
     console.log(user);
 
 // 9.2 - hw
@@ -84,7 +86,7 @@ let info = prompt("Какую информацию хотите узнать о 
 
 // 11 - hw
     let get = (prompt("What's your name ?"));
-    alert(`Привет, ${get} !`);*/
+    alert(`Привет, ${get} !`);
 
 
 /*
@@ -309,3 +311,104 @@ const getMobileOS = () => {
         } 
     }
        */
+
+
+/* while(true) {
+    const i = prompt('Введите текст: ');
+    if(i === 'break'){
+        break;
+    } else if (i === 'continue') {
+        continue;
+    }
+    console.log('В. значение: ',`${i}`);
+}
+ */
+
+/* const data = { 
+    name: 'Jess' ,
+    age: 23 ,
+    Pol: 'men' ,
+    admin: true 
+};
+
+for (key in data) { 
+    if (data[key]) {
+        console.log (`${key} : ${data[key]}`)
+    }
+} */
+
+/* HOME WORK 2.4 -----------------------------------------------------------------------------------------------------------*/
+/* ---------------------
+        Задание 1
+--------------------- */
+let i = 0;
+
+while(i < 2){   
+    console.log('Привет');
+    i++
+}
+
+/* ---------------------
+        Задание 2
+--------------------- */
+
+let a = 0;
+
+while(a < 6){   
+    console.log(`${a}`);
+    a++
+}
+
+/* ---------------------
+        Задание 3
+--------------------- */
+
+for(i = 7;i < 23;i++){
+    console.log(i)
+}
+
+/* ---------------------
+        Задание 4
+--------------------- */
+
+const work = {
+    'Коля': '200',
+    'Вася': '300',
+    'Петя': '400'
+}
+
+for (money in work){
+    if(work[money]){
+        console.log(`${money} — зарплата ${work[money]}`)
+    }
+}
+
+/* ---------------------
+        Задание 5
+--------------------- */
+
+let n=1000;
+
+do{
+    n /= 2;
+    console.log(n);
+} while (n > 50){   
+    console.log(`result n: ${n}`);
+}
+
+/* ---------------------
+        Задание 6
+--------------------- */
+
+let day = 1;
+let order = 5;
+
+for (day, order; order <= 31; day++, order += 7){
+  
+    if (day = order) {
+        console.log(`Сегодня пятница, ${order}-е число. Необходимо подготовить отчет.`);
+    } else {
+        console.log(`Сегодня, ${day}-е не день отчета`);
+    }
+}
+
