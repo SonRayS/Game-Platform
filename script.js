@@ -341,37 +341,37 @@ for (key in data) {
 /* ---------------------
         Задание 1
 --------------------- */
-let i = 0;
+/* let i = 0;
 
 while(i < 2){   
     console.log('Привет');
     i++
 }
-
+ */
 /* ---------------------
         Задание 2
 --------------------- */
 
-let a = 0;
+/* let a = 0;
 
 while(a < 6){   
     console.log(`${a}`);
     a++
-}
+} */
 
 /* ---------------------
         Задание 3
 --------------------- */
 
-for(i = 7;i < 23;i++){
+/* for(i = 7;i < 23;i++){
     console.log(i)
 }
-
+ */
 /* ---------------------
         Задание 4
 --------------------- */
 
-const work = {
+/* const work = {
     'Коля': '200',
     'Вася': '300',
     'Петя': '400'
@@ -381,26 +381,26 @@ for (money in work){
     if(work[money]){
         console.log(`${money} — зарплата ${work[money]}`)
     }
-}
+} */
 
 /* ---------------------
         Задание 5
 --------------------- */
 
-let n=1000;
+/* let n=1000;
 
 do{
     n /= 2;
     console.log(n);
 } while (n > 50){   
     console.log(`result n: ${n}`);
-}
+} */
 
 /* ---------------------
         Задание 6
 --------------------- */
 
-let day = 1;
+/* let day = 1;
 let order = 5;
 
 for (day, order; order <= 31; day++, order += 7){
@@ -412,3 +412,116 @@ for (day, order; order <= 31; day++, order += 7){
     }
 }
 
+ */
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+/* function calculator(length, max) {
+
+    const generationArray = (length, max) =>
+    ([...new Array(length)].map(() => Math.round(Math.random() * max)));
+
+    const number = generationArray(length, max);
+    console.log(`Массив 1. Длина: ${length} 2. Максимальное число : ${max} Array : ${number}`);
+   
+    let sum = 0;
+    number.map((item) => sum += item);
+    console.log(sum);
+
+}
+
+calculator(20, 65);
+calculator(24, 53);
+
+
+function quest(question,answer) {
+    let userAnswer = prompt(question)
+    check = (userAnswer === answer) ? 'Right' : 'Nooo...'; 
+    console.log(check);
+}
+
+quest('Зимой и летом одним цветом', 'елка');
+ */
+
+
+/* ---------------------
+        Задание 1
+--------------------- */
+
+/* const equality = (a,b) =>{
+    
+    a = parseInt(prompt('Введите 1-ю (цифру || число) :'));
+    b = parseInt(prompt('Введите 2-ю (цифру || число) :'));
+    
+    if (a > b){
+        alert(`${a} больше ${b}`);
+    } else if (a < b) {
+        alert(`${b} больше ${a}`);
+    } else { 
+        alert(`Answer: ${a} и ${b} раны`);
+    }
+}
+
+
+equality(); */
+
+/* ---------------------
+        Задание 2
+--------------------- 
+*/
+
+/* const even = (a) => {
+    a = parseInt(prompt('Введите (цифру || число)'));
+    look = (a%2 == 0 || a%2 == 1 && a%2 == -1) ? 'число четное':'нечетное число';
+    alert(look);
+}
+
+even(); */
+
+
+
+/* ---------------------
+        Задание 3
+--------------------- */
+                                                            /* ---------------------
+                                                                    Задание 3.1
+                                                            --------------------- */
+
+/* const squares = (a) => {
+    a = parseInt(prompt('Введите (цифру || число)'));
+    a *= a;
+    console.log(`Квадрат числа: ${a}`);
+}
+
+squares(); */
+
+                                                            /* ---------------------
+                                                                    Задание 3.2
+                                                            --------------------- */
+
+
+
+/* const square = (a) => {
+    a = parseInt(prompt('Введите (цифру || число)'));
+    Math.cbrt(a);
+    console.log(Math.sqrt(a));
+}
+
+square(); */
+
+/* ---------------------
+        Задание 4
+--------------------- */
+
+
+/* const user = {
+
+    name: 'Jess',
+    age: 18,
+    city: 'Zaporojhe',
+    getInfo() {
+        console.log(`Пользователь ${user.name}, возраст ${user.age}, проживает в городе ${user.city}`)    
+    }
+}
+
+user.getInfo(); */
