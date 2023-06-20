@@ -514,14 +514,82 @@ square(); */
 --------------------- */
 
 
-/* const user = {
-
-    name: 'Jess',
-    age: 18,
-    city: 'Zaporojhe',
-    getInfo() {
-        console.log(`Пользователь ${user.name}, возраст ${user.age}, проживает в городе ${user.city}`)    
+/* function check(age) {
+    age = parseInt(prompt('Cколько тебе лет ?'))
+    
+    if (age < 0) {
+        alert('Вы ввели неправильное значение')
+    } else if (age > 0 && age < 13) {
+        alert('Привет, друг!')
+    } else {
+        alert('Добро пожаловать!')
     }
+} 
+
+check(); */
+
+/* ---------------------
+        Задание 5
+--------------------- */
+
+/* function checkType(a,b) {
+    a = parseInt(prompt('Print first number :')),
+    b = parseInt(prompt('Print secound number :'))
+
+    look = (isNaN(a) && isNaN(b)) ? 'Одно или оба значения не являются числом' :
+    a + b;
+
+   console.log(look);
+
 }
 
-user.getInfo(); */
+checkType(); */
+
+
+/* ---------------------
+        Задание 6
+--------------------- */
+
+/* function cube(a) {
+
+    a = parseInt(prompt('Print first number :'))
+
+    if (Number.isInteger(a)) {
+        console.log('Okay this number!');
+      } else {
+        return console.log('Переданный параметр не является числом');
+      }
+    
+    console.log(Math.pow(a, 3));
+
+
+}
+
+cube(); */
+
+/* ---------------------
+        Задание 7
+--------------------- */
+
+
+/* let radius = parseInt(prompt('Найти периметр и площадь круга, введите радиус :'));
+
+const circle1 = {
+
+    getArea : Math.PI * (radius*radius),
+    getPerimeter : 2 * Math.PI * radius
+
+}
+
+console.log(`Периметр круга: ${circle1.getArea} / Площадь круга: ${circle1.getPerimeter}`)
+
+let radius2 = parseInt(prompt('Найти периметр и площадь 2-го круга, введите радиус :'));
+
+const circle2 = {
+
+    getArea : Math.PI * (radius2*radius2),
+    getPerimeter : 2 * Math.PI * radius
+
+}
+
+console.log(`Периметр 2-го круга: ${circle2.getArea} / Площадь 2-го круга: ${circle2.getPerimeter}`) */
