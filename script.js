@@ -593,3 +593,26 @@ const circle2 = {
 }
 
 console.log(`Периметр 2-го круга: ${circle2.getArea} / Площадь 2-го круга: ${circle2.getPerimeter}`) */
+
+
+/* ---------------------
+        Задание 8
+--------------------- */
+
+
+/* function season() {
+    
+    const month = parseInt(prompt('Введите номер месяца (от 1 до 12)'));
+    if (Number.isInteger(month) && month < 3 && month > 0 || month === 12) {
+        alert(`${month} месяц это зима! `)
+    } else if (Number.isInteger(month) && month < 6 && month > 2) {
+        alert(`${month} месяц это весна! `)
+    } else if (Number.isInteger(month) && month < 9 && month > 5) {
+        alert(`${month} месяц это лето! `)
+    } else if (Number.isInteger(month) && month < 12 && month > 8){
+        alert(`${month} месяц это осень! `)
+    } else {
+        alert('Ошибка, такого месяца нет, проверьте правильность синтаксиса')
+    }
+} */
+
