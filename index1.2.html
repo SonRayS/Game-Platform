@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,9 @@
 <body>
     <header>
         <div class="header center">
-            <h1 class="header__main-description">Добро пожаловать на мой сайт !</h1>
+            <div class="header__main">
+                <h1 class="header__main-description">Добро пожаловать на мой сайт !</h1>
+            </div>
             <div class="header__side">
                 <p class="header__side-description">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <b>поехали</b> и <b>приступай</b></p>
             </div>
@@ -35,15 +37,15 @@
             <div class="items-box__menu">
                 <h2 class="items-box__main-description">Времена года</h2>
                 <div class="items-box__side">
-                    <p class="items-box__side-description">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <b>поехали</b> и <b>приступай</b></p>
+                    <p class="items-box__side-description">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</b></p>
                 </div>
                 <div class="items-box__button">    
-                    <button>Поехали!</button>
+                    <button onclick="season()">Поехали!</button>
                 </div>
             </div>
-            <div class="items-box__img">
-                <img src="img/undraw_video_game_night_8h8m 1.png" alt="">
-            </div>
+                <div class="items-box__img">
+                    <img src="img/norm.png" alt="">
+                </div>
         </div>
     </section>
 
@@ -77,5 +79,6 @@
             <p class="rights__description">Все права защищены</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

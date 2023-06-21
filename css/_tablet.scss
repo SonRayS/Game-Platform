@@ -1,0 +1,198 @@
+@media (max-width: 1280px){
+
+    .center {
+        padding-left: calc(40% - 280px);
+        padding-right: calc(40% - 280px);
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: center;
+
+        &__main{
+            display: flex;
+            text-align: center;
+        }
+    }
+    
+    .header__side-description{
+        align-items: center;
+        text-align: center;
+    }
+
+    .items-box__side-description {
+        align-items: center;
+        text-align: center;
+    }
+
+    .full-game__side-description {
+        align-items: center;
+        text-align: center;
+    }
+
+    .items-box {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../img/background-t-img.png);
+        height: 800px;
+    }
+
+    .full-game {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        background-image: url(../img/background-t-img2.png);
+        height: 800px;
+    }
+
+    .footer-menu__side-description {
+        max-width: 600px;
+    }
+
+    .full-game__button{
+        display: flex;
+        justify-content: center;
+    }
+
+    .items-box__button{
+        display: flex;
+        justify-content: center;
+    }
+
+    .items-box__main-description {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        display: flex;
+        align-items: center;
+        max-width: 700px;
+        margin-bottom: 32px;
+        justify-content: center;
+    }
+
+    .full-game__main-description {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        display: flex;
+        align-items: center;
+        max-width: 700px;
+        margin-bottom: 32px;
+        justify-content: center;
+    }
+
+    .menu-img {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px;
+        padding-top: 128px;
+        height: 1221px;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+
+        &__items {
+            width: 360px;
+            height: 300px;
+            grid-column: span 4;
+            margin-top: 0;
+            margin-bottom: 0;
+            background-position: cover;
+            background-repeat: no-repeat;
+        }
+    }
+    .footer-menu__main-description {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 78px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        padding-top: 276px;
+        align-content: center;
+    }
+
+    .footer-menu__side {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width:  429px) and (max-width: 768px){
+    .center {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    .footer-menu__side-description {
+        max-width: 325px;
+    }
+
+    .footer-menu__main-description {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 39px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        padding-top: 276px;
+        align-content: center;
+    }
+
+    .full-game {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        background-image: url(../img/background-t-img2.png);
+        height: 654px;
+
+        &__img img{
+            width: 344px;
+            height: 231px;
+        }
+    }
+
+    .items-box{
+
+        justify-content: center;
+        height: 654px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+
+        .items-box {
+
+            &__img img{
+                width: 344px;
+                height: 231px;
+                padding-top: 64px;
+        }
+
+      
+        }
+    }
+}
