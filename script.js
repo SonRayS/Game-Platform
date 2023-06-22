@@ -594,6 +594,36 @@ const circle2 = {
 
 console.log(`Периметр 2-го круга: ${circle2.getArea} / Площадь 2-го круга: ${circle2.getPerimeter}`) */
 
+/* const circle1 = {
+
+    radius : parseInt(prompt('Найти периметр и площадь 1-го круга, введите радиус :')),
+    getArea : function() {
+        console.log(Math.PI * (this.radius*this.radius),'Периметр 1-го круга');
+    },
+    getPerimeter : function() {
+        console.log(Math.PI * (2 * Math.PI * this.radius),'Площадь 1-го круга');
+    }
+
+}
+
+circle1.getArea();
+circle1.getPerimeter();
+
+const circle2 = {
+
+    radius : parseInt(prompt('Найти периметр и площадь 2-го круга, введите радиус :')),
+    getArea : function() {
+        console.log(Math.PI * (this.radius*this.radius),'Периметр 2-го круга');
+    },
+    getPerimeter : function() {
+        console.log(Math.PI * (2 * Math.PI * this.radius),'Площадь 2-го круга');
+    }
+
+}
+
+circle2.getArea();
+circle2.getPerimeter(); */
+
 
 /* ---------------------
         Задание 8
