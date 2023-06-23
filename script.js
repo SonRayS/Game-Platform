@@ -646,3 +646,220 @@ circle2.getPerimeter(); */
     }
 } */
 
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+/*                                                     2.6 Массивы */
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+/* ---------------------
+        Задание 1
+--------------------- */
+
+/* const Arrays = [1, 5, 4, 10, 0, 3];
+
+for (let i = 0; i < Arrays.length; i++) {
+	if (Arrays[i] == 10) break;
+	console.log(Arrays[i]);
+} */
+
+/* ---------------------
+        Задание 2
+--------------------- */
+
+/* const Array = [1, 5, 4, 10, 0, 3];
+console.log(Array.indexOf(4)); */
+
+/* ---------------------
+        Задание 3
+--------------------- */
+
+/* const Array = [1, 3, 5, 10, 20];
+console.log(Array.join(' ')); */
+
+/* ---------------------
+        Задание 4
+--------------------- */
+
+/* let arr = [];
+let k = 1;
+
+for (let i = 0; i < 3; i++) {
+	arr[i] = [];
+	
+	for (let j = 0; j < 3; j++) {
+		arr[i][j] = k;
+	}
+}
+
+console.log(arr); */
+
+
+
+/* ---------------------
+        Задание 5
+--------------------- */
+
+/* const Array = [1, 1, 1];
+
+for (let a = 6,b = 2; a > Array.length; Array.push(b)) {
+} 
+console.log(Array); */
+
+/* ---------------------
+        Задание 6
+--------------------- */
+
+/* const Array = [9, 8, 7, 'a', 6, 5];
+Array.sort();
+Array.pop();
+console.log(Array); */
+
+
+/* ---------------------
+        Задание 7
+--------------------- */
+
+/* const arr = [9, 8, 7, 6, 5];
+const number = parseInt(prompt('Пользователь угадай число'));
+
+(arr.includes(number)) ? alert('Угадал'):alert('Не угадал'); */
+
+/* ---------------------
+        Задание 8
+--------------------- */
+
+/* const text = 'abcdef';
+const swap = text.split('').reverse().join('');
+console.log(swap); */
+
+/* ---------------------
+        Задание 9
+--------------------- */
+
+/* const arr = [[1, 2, 3],[4, 5, 6]];
+
+var arr2 = [];
+for (var i = 0; i < arr[0].length; i++) {
+    for(var j = 0; j < arr.length; j++) {
+        arr2.push(arr[j][i]);
+    }
+}
+
+console.log(arr2);
+ */
+
+/* ---------------------
+        Задание 10
+--------------------- */
+
+/* let arr = [1, 2, 3, 4, 5, 6];
+let res = 0;
+let Sum = 0;
+
+for (var i = 0; i < arr.length; i++) {
+    if(arr[i] != ''){
+        res = arr[i] + arr[i];
+        console.log(`${i}`,`${arr[i]}`,'сумма текущего элемента массива :',res);
+    }   
+
+    if (arr[i] < arr.length) {
+        Sum = arr[i + 1] + arr[i + 1];
+        console.log(`${i + 1}`,`${arr[i + 1]} -`,'сумма следующего элемента массива :',Sum);  
+        console.log('-----------------------------------------------')
+    }
+} */
+
+/* ---------------------
+        Задание 11
+--------------------- */
+
+/* function arr(){
+    const array = [2,4,5,2,7];
+    const maps = array.map(i => i * 2); 
+    console.log(maps);
+}
+arr(); */
+
+/* ---------------------
+        Задание 12
+--------------------- */
+
+/* arr(['слово', '', 'слог', 'длинное предложение', 'буква']); 
+
+function arr(array) {
+    
+    var arrLength = array.map(function(i) {
+        return i.length;
+    });
+
+    console.log(arrLength);
+}
+arr(); */
+
+/* ---------------------
+        Задание 13
+--------------------- */
+
+
+/* function filterPositive(array) {
+
+    for (var i of array) {
+        if (i < 0){
+            console.log(i);
+        }
+    }
+  }
+  
+  filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
+  filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -2] */
+
+  /* ---------------------
+        Задание 14
+--------------------- */
+
+
+/* function calculator(length, min, max) {
+
+    var sum = [];
+
+    const generationArray = (length, min, max) =>
+    ([...new Array(length)].map(() => Math.round(Math.random() * max + Math.round(Math.random() * min))));
+
+    const number = generationArray(length, min, max);
+    console.log(`Массив 1. Длина: ${length} / 2. Маx число : ${max} / Мin число : ${min} / Array : ${number}`);
+   
+    for (var i = 0; i < number.length; i++) {
+        if (number[i] % 2 == 0){
+            sum.push(number[i]);
+        }
+        
+    }
+    console.log(`Массив четныx значений : ${sum}`);
+}
+
+calculator(10,-50,50);
+ */
+
+
+
+/* ---------------------
+        Задание 15
+--------------------- */
+
+/* function calculator(length, min, max) {
+
+    var sum = 0;
+
+    const generationArray = (length, min, max) =>
+    ([...new Array(length)].map(() => Math.round(Math.random() * max + Math.round(Math.random() * min))));
+
+    const number = generationArray(length, min, max);
+    console.log(`Массив - 1.Длина: ${length} / 2.Маx число : ${max} / Мin число : ${min} / Array : ${number}`);
+   
+    for (var i = 0; i < number.length; i++) {
+            sum += number[i];
+    }
+    console.log(`Cреднее арифметическое массива : ${sum / number.length}`);
+}
+
+calculator(6,1,10);
+ */
