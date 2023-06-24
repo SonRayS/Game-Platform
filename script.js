@@ -772,8 +772,9 @@ for (var i = 0; i < arr.length; i++) {
         Задание 11
 --------------------- */
 
-/* function arr(){
-    const array = [2,4,5,2,7];
+/* var array = [2,4,5,2,7];
+
+function arr(){
     const maps = array.map(i => i * 2); 
     console.log(maps);
 }
