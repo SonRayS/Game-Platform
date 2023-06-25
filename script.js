@@ -737,15 +737,15 @@ console.log(swap); */
 
 /* const arr = [[1, 2, 3],[4, 5, 6]];
 
-var arr2 = [];
-for (var i = 0; i < arr[0].length; i++) {
-    for(var j = 0; j < arr.length; j++) {
+const arr2 = [];
+for (let i = 0; i < arr[0].length; i++) {
+    for(let j = 0; j < arr.length; j++) {
         arr2.push(arr[j][i]);
     }
 }
 
-console.log(arr2);
- */
+console.log(arr2); */
+
 
 /* ---------------------
         Задание 10
@@ -755,7 +755,7 @@ console.log(arr2);
 let res = 0;
 let Sum = 0;
 
-for (var i = 0; i < arr.length; i++) {
+for (let i = 0; i < arr.length; i++) {
     if(arr[i] != ''){
         res = arr[i] + arr[i];
         console.log(`${i}`,`${arr[i]}`,'сумма текущего элемента массива :',res);
@@ -772,7 +772,7 @@ for (var i = 0; i < arr.length; i++) {
         Задание 11
 --------------------- */
 
-/* var array = [2,4,5,2,7];
+/* const array = [2,4,5,2,7];
 
 function arr(){
     const maps = array.map(i => i * 2); 
@@ -788,13 +788,13 @@ arr(); */
 
 function arr(array) {
     
-    var arrLength = array.map(function(i) {
+    let arrLength = array.map(function(i) {
         return i.length;
     });
 
     console.log(arrLength);
-}
-arr(); */
+} */
+
 
 /* ---------------------
         Задание 13
@@ -803,7 +803,7 @@ arr(); */
 
 /* function filterPositive(array) {
 
-    for (var i of array) {
+    for (let i of array) {
         if (i < 0){
             console.log(i);
         }
@@ -820,7 +820,7 @@ arr(); */
 
 /* function calculator(length, min, max) {
 
-    var sum = [];
+    let sum = [];
 
     const generationArray = (length, min, max) =>
     ([...new Array(length)].map(() => Math.round(Math.random() * max + Math.round(Math.random() * min))));
@@ -828,7 +828,7 @@ arr(); */
     const number = generationArray(length, min, max);
     console.log(`Массив 1. Длина: ${length} / 2. Маx число : ${max} / Мin число : ${min} / Array : ${number}`);
    
-    for (var i = 0; i < number.length; i++) {
+    for (let i = 0; i < number.length; i++) {
         if (number[i] % 2 == 0){
             sum.push(number[i]);
         }
@@ -837,8 +837,8 @@ arr(); */
     console.log(`Массив четныx значений : ${sum}`);
 }
 
-calculator(10,-50,50);
- */
+calculator(10,-50,50); */
+
 
 
 
@@ -848,7 +848,7 @@ calculator(10,-50,50);
 
 /* function calculator(length, min, max) {
 
-    var sum = 0;
+    let sum = 0;
 
     const generationArray = (length, min, max) =>
     ([...new Array(length)].map(() => Math.round(Math.random() * max + Math.round(Math.random() * min))));
@@ -856,11 +856,10 @@ calculator(10,-50,50);
     const number = generationArray(length, min, max);
     console.log(`Массив - 1.Длина: ${length} / 2.Маx число : ${max} / Мin число : ${min} / Array : ${number}`);
    
-    for (var i = 0; i < number.length; i++) {
+    for (let i = 0; i < number.length; i++) {
             sum += number[i];
     }
     console.log(`Cреднее арифметическое массива : ${sum / number.length}`);
 }
 
-calculator(6,1,10);
- */
+calculator(6,1,10); */
