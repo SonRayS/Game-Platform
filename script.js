@@ -1035,6 +1035,7 @@ function array(){
     (regexp.test(secound))? console.log('Введенные значение коректны') : alert('Только кириллические символы !!!');
     // ввод 2
 
+    
 
     if(firstAnswer === first && secoundAnswer === secound) {
         alert('Ты угадал оба элемента!');
