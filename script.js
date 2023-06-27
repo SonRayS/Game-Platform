@@ -639,7 +639,7 @@ circle2.getPerimeter(); */
 --------------------- */
 
 
-/* function season() {
+function season() {
     
     const month = parseInt(prompt('Введите номер месяца (от 1 до 12)'));
     if (Number.isInteger(month) && month < 3 && month > 0 || month === 12) {
@@ -653,7 +653,7 @@ circle2.getPerimeter(); */
     } else {
         alert('Ошибка, такого месяца нет, проверьте правильность синтаксиса')
     }
-} */
+}
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 /*                                                     2.6 Массивы */
@@ -855,7 +855,7 @@ calculator(10,-50,50); */
         Задание 15
 --------------------- */
 
-function calculator(length, min, max) {
+/* function calculator(length, min, max) {
 
     let sum = 0;
 
@@ -871,7 +871,7 @@ function calculator(length, min, max) {
     console.log(`Cреднее арифметическое массива : ${sum / number.length}`);
 }
 
-calculator(6,1,10);
+calculator(6,1,10); */
 
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
@@ -882,5 +882,175 @@ calculator(6,1,10);
         Задание 1
 --------------------- */
 
-/* let str = 'Строка';
-console.log(str); */
+/* let str = String(prompt('Введите текст :'));
+console.log(str.toUpperCase()); */
+
+/* ---------------------
+        Задание 2
+--------------------- */
+
+/* searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Те');
+
+function searchStart(arr, str) { 
+    console.log(arr,str);
+    const result = arr.filter(arr => arr.toLowerCase().startsWith(str.toLowerCase()))
+    console.log(result);
+} */
+
+/* ---------------------
+        Задание 3
+--------------------- */
+
+/* const number = 32.58884;
+console.log(Math.floor(number),Math.ceil(number),Math.round(number));
+ */
+
+/* ---------------------
+        Задание 4
+--------------------- */
+
+/* const arr = [52, 53, 49, 77, 21, 32];
+const max = Math.max(...arr);
+console.log(max); */
+
+/* ---------------------
+        Задание 5
+--------------------- */
+
+/* function calculator(length, min, max) {
+
+    const generationArray = (length, min, max) =>
+    ([...new Array(length)].map(() => Math.round(Math.random() * max + Math.round(Math.random() * min))));
+
+    const number = generationArray(length, min, max);
+    console.log(`Массив 1. Длина: ${length} / 2. Маx число : ${max} / Мin число : ${min} / Array : ${number}`);
+   
+}
+
+calculator(1,1,10); */
+
+
+/* ---------------------
+        Задание 6
+--------------------- */
+
+/* max = prompt('print number');
+
+function calculator(length, min, max) {
+
+    
+    const generationArray = (length, min, max) =>
+    ([...new Array(length)].map(() => Math.round(Math.random() * max + Math.round(Math.random() * min))));
+
+    const number = generationArray(length, min, max);
+    console.log(`Массив - 1.Длина: ${length} / 2.Маx число : ${max} / Мin число : ${min} / Array : ${number}`);
+ 
+}
+
+calculator(max/2,0,max); */
+
+
+/* ---------------------
+        Задание 7
+--------------------- */
+
+/* max = prompt('print max number :');
+min = prompt('print min number :');
+
+function calculator(min, max) {
+
+    
+    const generationArray = (min, max) =>
+    (Math.round(Math.random() * max + Math.round(Math.random() * min)));
+
+    const number = generationArray(min, max);
+    console.log(`Маx число : ${max} / Мin число : ${min} / Array : ${number}`);
+ 
+}
+
+calculator(min,max); */
+
+/* ---------------------
+        Задание 8
+--------------------- */
+
+/* let newDate = new Date();
+console.log(newDate); */
+
+/* ---------------------
+        Задание 9
+--------------------- */
+
+/* const currentDate = new Date();
+let days73 = 73 * 24 * 60 * 60 * 1000;
+const result = +currentDate + +days73;
+let calcDate = new Date(result);
+console.log(calcDate); */
+
+/* ---------------------
+        Задание 10
+--------------------- */
+
+/* function resDate(date) {
+
+    const days = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
+    const months = ["января", "февраля", "марта", "апреля", "мая", "июня","июля", "августа", "сентября", "октября", "ноября", "декабря"];
+
+    let myDate = new Date(date);
+    let fullDate = 'Дата: ' + myDate.getDate() + ' ' + months[myDate.getMonth()] + ' ' + myDate.getFullYear() + ' ' + days[myDate.getDay()];
+    let time = 'Время: ' + myDate.getHours() + ':' + myDate.getMinutes() + ':' + myDate.getSeconds();
+
+    console.log(fullDate);
+    console.log(time);
+}
+
+resDate(new Date(2023, 10, 1, 20, 11,32)); */
+
+/* ---------------------
+        Задание 11
+--------------------- */
+
+function array(){
+
+    
+    let list = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    alert(`Запомни слова : \n ${list}`)
+
+    const firstAnswer = (list[0]).toLowerCase(); // ответ 1 
+    console.log(firstAnswer);
+    const secoundAnswer = (list[list.length - 1]).toLowerCase(); // ответ 2
+    console.log(secoundAnswer);
+  
+    list = list.sort(() => Math.random() - 0.5); // сотировка 
+    let regexp = new RegExp('^[а-яА-Я]*$');
+
+    first = prompt(`${list} \n Чему равнялся первый элемент исходного массива?`).toLowerCase()
+    console.log(first);
+
+    (regexp.test(first))? console.log('Введенные значение коректны') : alert('Только кириллические символы !!!');
+    // ввод 1 
+
+    secound = prompt(`${list} \n Чему равнялся последний элемент исходного массива? `).toLowerCase(); 
+    console.log(secound);
+
+    (regexp.test(secound))? console.log('Введенные значение коректны') : alert('Только кириллические символы !!!');
+    // ввод 2
+
+    
+
+
+
+
+
+
+
+
+    if(firstAnswer === first && secoundAnswer === secound) {
+        alert('Ты угадал оба элемента!');
+    } else if (firstAnswer !== first && secoundAnswer === secound ||
+        firstAnswer === first && secoundAnswer !== secound) {
+        alert('Вы были близки к победе!');
+    } else {
+        alert('Не угадал ни одного элемента');
+    }
+}
