@@ -1036,15 +1036,6 @@ function array(){
     (regexp.test(secound))? console.log('Введенные значение коректны') : alert('Только кириллические символы !!!');
     // ввод 2
 
-    
-
-
-
-
-
-
-
-
     if(firstAnswer === first && secoundAnswer === secound) {
         alert('Ты угадал оба элемента!');
     } else if (firstAnswer !== first && secoundAnswer === secound ||
@@ -1054,3 +1045,136 @@ function array(){
         alert('Не угадал ни одного элемента');
     }
 }
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+/*                                                    2.8 Callback, setTimeout, setInterval
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+/* ---------------------
+        Задание 1 
+--------------------- */
+
+/* function functionWithCallback(callback) {
+    callback();
+}
+
+let people = [
+    { name: 'Глеб', age: 29 },
+    { name: 'Анна', age: 17 },
+    { name: 'Олег', age: 7 },
+    { name: 'Оксана', age: 47 }
+];
+ 
+function csort() {
+
+   console.log(people.sort(function(a,b) {
+        if (a.age > b.age) {
+            return 1; }
+        if (a.age < b.age) {
+            return -1; }
+        return 0;
+    }))
+
+}
+
+functionWithCallback(csort); */
+
+
+/* ---------------------
+        Задание 2
+--------------------- */
+
+/* function isPositive(arr) {
+
+    const result = [];
+
+    for (const i of arr) {
+        if (i > 0) {
+            result.push(i);
+        }
+    }
+
+    return result;
+}
+
+function isMale(arr) {
+
+    const result = [];
+
+    for (const i of arr) {
+        if (i.gender == 'male') {
+            result.push(i);
+        }
+    }
+
+    return result;
+}   
+
+function filter(arr, ruleFunction) {
+    
+    const output = [];
+
+    for (let i = 0; i < 1; i++) {
+        output.push(ruleFunction(arr));
+    }
+
+    return output;
+}
+
+console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
+    
+const people = [
+    {name: 'Глеб', gender: 'male'},
+    {name: 'Анна', gender: 'female'},
+    {name: 'Олег', gender: 'male'},
+    {name: 'Оксана', gender: 'female'}
+ ];
+ 
+console.log(filter(people, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}] */
+
+
+/* ---------------------
+        Задание 3
+--------------------- */
+
+/* function showAd() {
+    let myDate = new Date;
+	console.log(myDate);
+}
+
+setTimeout(() => { clearInterval(timerId); console.log('30 секунд прошло'); }, 30000);
+let timerId = setInterval(() => setTimeout(showAd), 3000); */
+
+
+/* ---------------------
+        Задание 4
+--------------------- */
+
+/* function delayForSecond(callback) {
+
+    setTimeout(function tick() {
+        callback();
+    }, 1000);
+}
+
+delayForSecond(function () {
+  console.log('Привет, Глеб!');
+}) */
+
+/* ---------------------
+        Задание 5
+--------------------- */
+
+/* function delayForSecond(cb) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+				if(cb) { 	cb(); }
+
+    }, 1000)
+}
+
+function sayHi (name) {
+    console.log(`Привет, ${name}!`);
+}
+
+delayForSecond(function run() { sayHi('Глеб') }); */
