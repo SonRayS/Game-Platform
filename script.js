@@ -1128,7 +1128,7 @@ const people = [
     {name: 'Анна', gender: 'female'},
     {name: 'Олег', gender: 'male'},
     {name: 'Оксана', gender: 'female'}
- ];
+];
  
 console.log(filter(people, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}] */
 
@@ -1158,7 +1158,7 @@ let timerId = setInterval(() => setTimeout(showAd), 3000); */
 }
 
 delayForSecond(function () {
-  console.log('Привет, Глеб!');
+    console.log('Привет, Глеб!');
 }) */
 
 /* ---------------------
