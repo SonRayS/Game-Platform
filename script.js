@@ -1067,14 +1067,7 @@ let people = [
  
 function csort() {
 
-   console.log(people.sort(function(a,b) {
-        if (a.age > b.age) {
-            return 1; }
-        if (a.age < b.age) {
-            return -1; }
-        return 0;
-    }))
-
+   console.log(people.sort((a, b) => a.age - b.age));
 }
 
 functionWithCallback(csort); */
@@ -1084,44 +1077,32 @@ functionWithCallback(csort); */
         Задание 2
 --------------------- */
 
-/* function isPositive(arr) {
+/* function isPositive(i) {
 
-    const result = [];
-
-    for (const i of arr) {
-        if (i > 0) {
-            result.push(i);
-        }
+    if ( i >= 0) {
+     
+        return console.log(([i]));
+      
     }
-
-    return result;
+    
 }
 
-function isMale(arr) {
-
-    const result = [];
-
-    for (const i of arr) {
-        if (i.gender == 'male') {
-            result.push(i);
-        }
+function isMale(i) {
+    
+    if ( i.gender == 'male' ) {
+        return console.log(i);
     }
 
-    return result;
 }   
 
 function filter(arr, ruleFunction) {
-    
-    const output = [];
-
-    for (let i = 0; i < 1; i++) {
-        output.push(ruleFunction(arr));
+         
+    for (let i = 0; i < arr.length; i++){
+        ruleFunction(arr[i]);
     }
-
-    return output;
 }
 
-console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
+filter([3, -4, 1, 9], isPositive); // Должен выводить [3, 1, 9]
     
 const people = [
     {name: 'Глеб', gender: 'male'},
@@ -1130,7 +1111,7 @@ const people = [
     {name: 'Оксана', gender: 'female'}
 ];
  
-console.log(filter(people, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}] */
+filter(people, isMale); */ // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
 
 
 /* ---------------------
