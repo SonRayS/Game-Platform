@@ -1077,29 +1077,39 @@ functionWithCallback(csort); */
         Задание 2
 --------------------- */
 
-/* function isPositive(i) {
+function isPositive(i) {
 
-    if ( i >= 0) {
-     
-        return console.log(([i]));
-      
+    if (i >= 0){
+        return true;
+    } else {
+        return false;
     }
-    
+
 }
 
 function isMale(i) {
     
-    if ( i.gender == 'male' ) {
-        return console.log(i);
+    if (i.gender === 'male'){
+        return true;
+    } else {
+        return false;
     }
-
+    
 }   
 
 function filter(arr, ruleFunction) {
-         
-    for (let i = 0; i < arr.length; i++){
+
+    const result = [];
+
+    for (i = 0; i < arr.length; i++) {
         ruleFunction(arr[i]);
+         if(ruleFunction(arr[i]) === true){
+            result.push(arr[i]);
+        } 
     }
+
+    console.log(result);
+    
 }
 
 filter([3, -4, 1, 9], isPositive); // Должен выводить [3, 1, 9]
@@ -1111,7 +1121,7 @@ const people = [
     {name: 'Оксана', gender: 'female'}
 ];
  
-filter(people, isMale); */ // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
+filter(people, isMale);  // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
 
 
 /* ---------------------
