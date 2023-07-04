@@ -1108,11 +1108,11 @@ function filter(arr, ruleFunction) {
         } 
     }
 
-    console.log(result);
+    return result;
     
 }
 
-filter([3, -4, 1, 9], isPositive); // Должен выводить [3, 1, 9]
+console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
     
 const people = [
     {name: 'Глеб', gender: 'male'},
@@ -1121,7 +1121,7 @@ const people = [
     {name: 'Оксана', gender: 'female'}
 ];
  
-filter(people, isMale);  // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
+console.log(filter(people, isMale));  // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
 
 
 /* ---------------------
