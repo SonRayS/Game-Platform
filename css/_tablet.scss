@@ -1,5 +1,4 @@
-@media (max-width: 1280px){
-
+@media (max-width: 1280px) {
     .center {
         padding-left: calc(40% - 280px);
         padding-right: calc(40% - 280px);
@@ -13,13 +12,13 @@
         align-content: center;
         align-items: center;
 
-        &__main{
+        &__main {
             display: flex;
             text-align: center;
         }
     }
-    
-    .header__side-description{
+
+    .header__side-description {
         align-items: center;
         text-align: center;
     }
@@ -58,12 +57,12 @@
         max-width: 600px;
     }
 
-    .full-game__button{
+    .full-game__button {
         display: flex;
         justify-content: center;
     }
 
-    .items-box__button{
+    .items-box__button {
         display: flex;
         justify-content: center;
     }
@@ -135,7 +134,7 @@
     }
 }
 
-@media (min-width:  429px) and (max-width: 768px){
+@media (min-width: 429px) and (max-width: 768px) {
     .center {
         padding-left: 64px;
         padding-right: 64px;
@@ -168,14 +167,13 @@
         background-image: url(../img/background-t-img2.png);
         height: 654px;
 
-        &__img img{
+        &__img img {
             width: 344px;
             height: 231px;
         }
     }
 
-    .items-box{
-
+    .items-box {
         justify-content: center;
         height: 654px;
         display: flex;
@@ -185,14 +183,11 @@
         align-content: center;
 
         .items-box {
-
-            &__img img{
+            &__img img {
                 width: 344px;
                 height: 231px;
                 padding-top: 64px;
-        }
-
-      
+            }
         }
     }
 }

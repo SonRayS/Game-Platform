@@ -1,5 +1,4 @@
-@media(min-width: 343px) and (max-width: 428px){
-
+@media (min-width: 343px) and (max-width: 428px) {
     .header {
         height: 735px;
         display: flex;
@@ -10,7 +9,7 @@
         flex-wrap: wrap;
         padding-top: 0;
 
-        &__main-description{
+        &__main-description {
             font-weight: 700;
             font-size: 32px;
             line-height: 39px;
@@ -19,7 +18,7 @@
             text-align: center;
         }
 
-        &__side-description{
+        &__side-description {
             font-weight: 300;
             font-size: 14px;
             line-height: 22px;
@@ -33,7 +32,7 @@
             margin-top: 0;
         }
 
-        &__side-description{
+        &__side-description {
             text-align: center;
         }
     }
@@ -58,9 +57,7 @@
         }
     }
 
-   
-    .items-box{
-
+    .items-box {
         justify-content: center;
         height: 654px;
         display: flex;
@@ -100,14 +97,13 @@
             width: 343px;
         }
 
-        &__button{
+        &__button {
             display: flex;
             justify-content: center;
             flex-direction: row;
-        }       
+        }
 
-
-        &__img img{
+        &__img img {
             width: 344px;
             height: 231px;
             padding-top: 64px;
@@ -123,12 +119,12 @@
         background-image: url(../img/background-t-img2.png);
         height: 654px;
 
-        &__img img{
+        &__img img {
             width: 344px;
             height: 231px;
         }
 
-        &__main-description{
+        &__main-description {
             font-weight: 700;
             font-size: 32px;
             line-height: 39px;
@@ -138,7 +134,7 @@
             justify-content: center;
         }
 
-        &__side-description{
+        &__side-description {
             font-weight: 300;
             font-size: 14px;
             line-height: 22px;
@@ -147,14 +143,13 @@
             text-align: center;
         }
 
-        &__button{
+        &__button {
             display: flex;
             justify-content: center;
             flex-direction: row;
         }
     }
 
-    
     .footer-menu__main-description {
         font-style: normal;
         font-weight: 700;
@@ -164,7 +159,6 @@
         align-items: center;
         text-align: center;
         padding-top: 52px;
-        
     }
 
     .footer-menu__side-description {
@@ -185,8 +179,7 @@
     }
 }
 
-@media(min-width: 320px) and (max-width: 342px){
-
+@media (min-width: 320px) and (max-width: 342px) {
     .header {
         height: 735px;
         display: flex;
@@ -197,7 +190,7 @@
         flex-wrap: wrap;
         padding-top: 0;
 
-        &__main-description{
+        &__main-description {
             font-weight: 700;
             font-size: 32px;
             line-height: 39px;
@@ -206,7 +199,7 @@
             text-align: center;
         }
 
-        &__side-description{
+        &__side-description {
             font-weight: 300;
             font-size: 14px;
             line-height: 22px;
@@ -220,7 +213,7 @@
             margin-top: 0;
         }
 
-        &__side-description{
+        &__side-description {
             text-align: center;
         }
     }
@@ -251,9 +244,7 @@
         }
     }
 
-   
-    .items-box{
-
+    .items-box {
         justify-content: center;
         height: 654px;
         display: flex;
@@ -293,14 +284,13 @@
             width: 320px;
         }
 
-        &__button{
+        &__button {
             display: flex;
             justify-content: center;
             flex-direction: row;
-        }       
+        }
 
-
-        &__img img{
+        &__img img {
             width: 280px;
             height: 200px;
             padding-top: 64px;
@@ -316,12 +306,12 @@
         background-image: url(../img/background-t-img2.png);
         height: 654px;
 
-        &__img img{
+        &__img img {
             width: 280px;
             height: 200px;
         }
 
-        &__main-description{
+        &__main-description {
             font-weight: 700;
             font-size: 32px;
             line-height: 39px;
@@ -331,7 +321,7 @@
             justify-content: center;
         }
 
-        &__side-description{
+        &__side-description {
             font-weight: 300;
             font-size: 14px;
             line-height: 22px;
@@ -341,14 +331,13 @@
             max-width: 300px;
         }
 
-        &__button{
+        &__button {
             display: flex;
             justify-content: center;
             flex-direction: row;
         }
     }
 
-    
     .footer-menu__main-description {
         font-weight: 700;
         font-size: 32px;

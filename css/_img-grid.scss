@@ -1,47 +1,44 @@
-.menu-img{
-
-    background-image: url("../img/background-img.png");
+.menu-img {
+    background-image: url('../img/background-img.png');
     display: grid;
-    grid-template-columns: repeat(12, 1fr); 
+    grid-template-columns: repeat(12, 1fr);
     justify-items: center;
 
-        &__items{
-            width: 379px;
-            height: 300px;  
-            grid-column: span 4;
-            margin-top: 128px;
-            margin-bottom: 128px;
-        }
+    &__items {
+        width: 379px;
+        height: 300px;
+        grid-column: span 4;
+        margin-top: 128px;
+        margin-bottom: 128px;
+    }
 
-        &__items_one{
-            background-image: url("../img/img-2.png");
-            display: flex;
-            align-items: flex-end;
-            justify-content: flex-start;
-        }
+    &__items_one {
+        background-image: url('../img/img-2.png');
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
 
-        &__items_two{
-            background-image: url("../img/img-1.png");
-            display: flex;
-            align-items: flex-end;
-            justify-content: flex-start;
-        }
+    &__items_two {
+        background-image: url('../img/img-1.png');
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
 
-        &__items_three{
-            background-image: url("../img/img-3.png");
-            display: flex;
-            align-items: flex-end;
-            justify-content: flex-start;
-            
-        }
+    &__items_three {
+        background-image: url('../img/img-3.png');
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
 
-        &__items-description{
-            display: block;
-            box-sizing: border-box;
-            margin: $gap;
-            font-weight: 600;
-            font-size: 24px;
-            line-height: $gap;
-        }
+    &__items-description {
+        display: block;
+        box-sizing: border-box;
+        margin: $gap;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: $gap;
+    }
 }
-

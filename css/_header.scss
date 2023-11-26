@@ -1,22 +1,21 @@
-.header{
-
+.header {
     box-sizing: border-box;
     padding-top: 217px;
-    background-image: url("../img/background-main.png");
-    background-position: center;    
+    background-image: url('../img/background-main.png');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 1024px;
 
-    &__button{
+    &__button {
         margin-top: 44px;
 
-        & button{
+        & button {
             width: 234.06px;
             height: 48.6px;
-            background: #9C0332;
+            background: #9c0332;
             border-radius: 30px;
-            color: #FFFFFF;
+            color: #ffffff;
             font-weight: 400;
             font-size: 18px;
             line-height: 22px;
@@ -24,15 +23,15 @@
         }
     }
 
-    &__side-description{
+    &__side-description {
         font-weight: 300;
         font-size: 18px;
         line-height: $gap;
         max-width: 481px;
-        opacity:0.85;
+        opacity: 0.85;
     }
 
-    &__main-description{
+    &__main-description {
         font-weight: 700;
         font-size: 64px;
         line-height: 78px;
@@ -41,8 +40,8 @@
         max-width: 700px;
         margin-bottom: $gap;
     }
-    
-    &__side{
+
+    &__side {
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
@@ -50,6 +49,4 @@
         align-items: flex-start;
         align-content: flex-start;
     }
-    
-    
 }

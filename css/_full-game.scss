@@ -1,14 +1,13 @@
-.full-game{
+.full-game {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-image: url("../img/background-t-img2.png");
+    background-image: url('../img/background-t-img2.png');
     height: 800px;
 
-
-    &__main-description{
+    &__main-description {
         font-weight: 700;
         font-size: 48px;
         line-height: 59px;
@@ -18,15 +17,15 @@
         margin-bottom: $gap;
     }
 
-    &__side-description{
+    &__side-description {
         font-weight: 300;
         font-size: 18px;
         line-height: $gap;
         max-width: 588px;
-        opacity:0.85;
+        opacity: 0.85;
     }
 
-    &__side{
+    &__side {
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
@@ -35,13 +34,11 @@
         align-content: flex-start;
     }
 
-    &__button{
-
-
-        & button{
+    &__button {
+        & button {
             width: 234.06px;
             height: 48.6px;
-            background: #9C0332;
+            background: #9c0332;
             border-radius: 30px;
             color: rgb(30, 177, 210);
             font-weight: 400;
