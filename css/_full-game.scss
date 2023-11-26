@@ -1,50 +1,47 @@
 .full-game {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
-    background-image: url('../img/background-t-img2.png');
     height: 800px;
+    background-image: url('../img/background-t-img2.png');
 
     &__main-description {
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 59px;
         display: flex;
         align-items: center;
         max-width: 700px;
         margin-bottom: $gap;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
     }
 
     &__side-description {
+        max-width: 588px;
         font-weight: 300;
         font-size: 18px;
         line-height: $gap;
-        max-width: 588px;
         opacity: 0.85;
     }
 
     &__side {
         display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        flex-direction: column;
+        flex-flow: column wrap;
+        place-content: flex-start flex-start;
         align-items: flex-start;
-        align-content: flex-start;
     }
 
     &__button {
         & button {
             width: 234.06px;
             height: 48.6px;
-            background: #9c0332;
-            border-radius: 30px;
-            color: rgb(30, 177, 210);
+            color: rgb(30 177 210);
             font-weight: 400;
             font-size: 18px;
             line-height: 22px;
+            background: #9c0332;
             border: none;
+            border-radius: 30px;
         }
     }
 }

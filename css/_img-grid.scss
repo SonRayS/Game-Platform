@@ -1,36 +1,36 @@
 .menu-img {
-    background-image: url('../img/background-img.png');
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     justify-items: center;
+    background-image: url('../img/background-img.png');
 
     &__items {
+        grid-column: span 4;
         width: 379px;
         height: 300px;
-        grid-column: span 4;
         margin-top: 128px;
         margin-bottom: 128px;
     }
 
     &__items_one {
-        background-image: url('../img/img-2.png');
         display: flex;
         align-items: flex-end;
         justify-content: flex-start;
+        background-image: url('../img/img-2.png');
     }
 
     &__items_two {
-        background-image: url('../img/img-1.png');
         display: flex;
         align-items: flex-end;
         justify-content: flex-start;
+        background-image: url('../img/img-1.png');
     }
 
     &__items_three {
-        background-image: url('../img/img-3.png');
         display: flex;
         align-items: flex-end;
         justify-content: flex-start;
+        background-image: url('../img/img-3.png');
     }
 
     &__items-description {

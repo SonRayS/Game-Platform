@@ -1,15 +1,13 @@
-@media (max-width: 1280px) {
+@media (width <= 1280px) {
     .center {
-        padding-left: calc(40% - 280px);
         padding-right: calc(40% - 280px);
+        padding-left: calc(40% - 280px);
     }
 
     .header {
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-content: center;
+        flex-flow: column wrap;
+        place-content: center flex-start;
         align-items: center;
 
         &__main {
@@ -35,22 +33,20 @@
 
     .items-box {
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+        flex-flow: row wrap;
         align-items: center;
         justify-content: center;
-        background-image: url(../img/background-t-img.png);
         height: 800px;
+        background-image: url("../img/background-t-img.png");
     }
 
     .full-game {
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
+        flex-flow: column-reverse wrap;
         align-items: center;
         justify-content: space-evenly;
-        background-image: url(../img/background-t-img2.png);
         height: 800px;
+        background-image: url("../img/background-t-img2.png");
     }
 
     .footer-menu__side-description {
@@ -68,76 +64,71 @@
     }
 
     .items-box__main-description {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 700px;
+        margin-bottom: 32px;
         font-weight: 700;
         font-size: 48px;
         line-height: 59px;
-        display: flex;
-        align-items: center;
-        max-width: 700px;
-        margin-bottom: 32px;
-        justify-content: center;
     }
 
     .full-game__main-description {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 700px;
+        margin-bottom: 32px;
         font-weight: 700;
         font-size: 48px;
         line-height: 59px;
-        display: flex;
-        align-items: center;
-        max-width: 700px;
-        margin-bottom: 32px;
-        justify-content: center;
     }
 
     .menu-img {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 32px;
-        padding-top: 128px;
+        place-content: center center;
+        place-items: center center;
         height: 1221px;
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-        align-content: center;
+        padding-top: 128px;
 
         &__items {
+            grid-column: span 4;
             width: 360px;
             height: 300px;
-            grid-column: span 4;
             margin-top: 0;
             margin-bottom: 0;
-            background-position: cover;
             background-repeat: no-repeat;
+            background-position: cover;
         }
     }
+
     .footer-menu__main-description {
+        display: flex;
+        flex-flow: row nowrap;
+        place-content: center center;
+        align-items: center;
+        margin-bottom: 32px;
+        padding-top: 276px;
         font-weight: 700;
         font-size: 64px;
         line-height: 78px;
-        display: flex;
-        align-items: center;
-        margin-bottom: 32px;
-        justify-content: center;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        padding-top: 276px;
-        align-content: center;
     }
 
     .footer-menu__side {
         display: flex;
-        justify-content: center;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        align-content: center;
+        flex-flow: row nowrap;
+        place-content: center center;
         align-items: center;
     }
 }
 
-@media (min-width: 429px) and (max-width: 768px) {
+@media (width >= 429px) and (width <= 768px) {
     .center {
-        padding-left: 64px;
         padding-right: 64px;
+        padding-left: 64px;
     }
 
     .footer-menu__side-description {
@@ -145,27 +136,24 @@
     }
 
     .footer-menu__main-description {
+        display: flex;
+        flex-flow: row nowrap;
+        place-content: center center;
+        align-items: center;
+        margin-bottom: 32px;
+        padding-top: 276px;
         font-weight: 700;
         font-size: 42px;
         line-height: 39px;
-        display: flex;
-        align-items: center;
-        margin-bottom: 32px;
-        justify-content: center;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        padding-top: 276px;
-        align-content: center;
     }
 
     .full-game {
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
+        flex-flow: column-reverse wrap;
         align-items: center;
         justify-content: space-evenly;
-        background-image: url(../img/background-t-img2.png);
         height: 654px;
+        background-image: url("../img/background-t-img2.png");
 
         &__img img {
             width: 344px;
@@ -174,13 +162,11 @@
     }
 
     .items-box {
-        justify-content: center;
-        height: 654px;
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+        flex-flow: row wrap;
+        place-content: center center;
         align-items: center;
-        align-content: center;
+        height: 654px;
 
         .items-box {
             &__img img {

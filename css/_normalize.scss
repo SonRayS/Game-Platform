@@ -6,8 +6,8 @@ $gap: 32px;
 }
 
 .center {
-    padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
+    padding-left: calc(50% - 600px);
 }
 
 html {
@@ -15,14 +15,14 @@ html {
 }
 
 body {
-    font-family: 'Montserrat';
-    font-style: normal;
     max-width: 1440px;
     margin: auto;
     color: white;
+    font-family: Montserrat;
+    font-style: normal;
     background: linear-gradient(45deg, #05d9eb, #010, #ff2a6d);
-    background-size: 800% 800%;
     background-repeat: no-repeat;
+    background-size: 800% 800%;
     animation: gradient 20s ease infinite;
 }
 
@@ -51,12 +51,12 @@ body {
 button {
     width: 234.06px;
     height: 48.6px;
-    background: #9c0332;
-    border-radius: 30px;
+    margin-top: $gap;
     color: #fff;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
+    background: #9c0332;
     border: none;
-    margin-top: $gap;
+    border-radius: 30px;
 }
