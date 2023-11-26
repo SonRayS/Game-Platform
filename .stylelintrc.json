@@ -10,6 +10,6 @@
         ],
         "prettier/prettier": true,
         "scss/dollar-variable-pattern": null,
-        "string": "always-unless-keyword"
+        "selector-class-pattern": null
     }
 }
